@@ -56,14 +56,14 @@ IC MCU 32BIT 64KB FLASH 48LQFP
 ARM® Cortex®-M0 STM32F0 Microcontroller IC 32-Bit 48MHz 64KB (64K x 8) FLASH 48-LQFP (7x7)
 
 
-##Reference Projects
+##R eference Projects
 - TI Reference Design - TIDA-00449
 - TI Reference Design - TIDA-00792
 - TI Reference Disign - TIDA-00255
 - LibreSolar
   - Also using bq769x0 for cell monitor but no gas gauge, that function is done by the MCU (STM32F072)
 
-##TODO
+## TODO
 - [x] Determine pack size and output - see intro
 - [x] Determine cell monitor - bq76930
 - [ ] Determine gas gauge - bq78350-R1 or bq34z100-R1

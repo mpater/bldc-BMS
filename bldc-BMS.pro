@@ -1,4 +1,4 @@
-update=Sun 10 Jun 2018 16:13:45 BST
+update=Mon 25 Jun 2018 00:18:33 BST
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,13 @@ LibName32=valves
 LibName33=battery_management
 LibName34=bldc-BMS
 LibName35=stm32
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
