@@ -56,7 +56,7 @@ IC MCU 32BIT 64KB FLASH 48LQFP
 ARM® Cortex®-M0 STM32F0 Microcontroller IC 32-Bit 48MHz 64KB (64K x 8) FLASH 48-LQFP (7x7)
 
 
-##R eference Projects
+## Reference Projects
 - TI Reference Design - TIDA-00449
 - TI Reference Design - TIDA-00792
 - TI Reference Disign - TIDA-00255
