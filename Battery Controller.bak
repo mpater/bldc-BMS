@@ -1,0 +1,734 @@
+EESchema Schematic File Version 4
+LIBS:bldc-BMS-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bldc-BMS-rescue:BQ78350 U3
+U 1 1 5B9C26CC
+P 5150 3350
+F 0 "U3" H 4450 4500 50  0000 L CNN
+F 1 "BQ78350-R1" H 5850 4500 50  0000 R CNN
+F 2 "Package_SO:TSSOP-30_4.4x7.8mm_P0.5mm" H 5150 3350 50  0001 C CNN
+F 3 "" H 4450 4500 50  0001 C CNN
+	1    5150 3350
+	1    0    0    -1  
+$EndComp
+Text HLabel 3850 3550 0    60   Input ~ 0
+PCHG
+Wire Wire Line
+	3850 3550 4250 3550
+$Comp
+L Device:LED_ALT D26
+U 1 1 5B9C2757
+P 7300 2150
+F 0 "D26" H 7100 2000 50  0000 C CNN
+F 1 "GREEN" H 7350 2000 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7300 2150 50  0001 C CNN
+F 3 "~" H 7300 2150 50  0001 C CNN
+	1    7300 2150
+	0    -1   -1   0   
+$EndComp
+Text HLabel 1650 2350 0    60   Input ~ 0
+REGOUT
+Wire Wire Line
+	1650 2350 1900 2350
+Text HLabel 3850 3250 0    60   Input ~ 0
+SDL
+Text HLabel 3850 3150 0    60   Input ~ 0
+SDA
+Wire Wire Line
+	3850 3150 4250 3150
+Wire Wire Line
+	4250 3250 3850 3250
+$Comp
+L Device:LED_ALT D27
+U 1 1 5B9C2884
+P 7600 2150
+F 0 "D27" H 7400 2000 50  0000 C CNN
+F 1 "GREEN" H 7650 2000 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7600 2150 50  0001 C CNN
+F 3 "~" H 7600 2150 50  0001 C CNN
+	1    7600 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_ALT D24
+U 1 1 5B9C29B9
+P 6700 2150
+F 0 "D24" H 6500 2000 50  0000 C CNN
+F 1 "GREEN" H 6750 2000 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6700 2150 50  0001 C CNN
+F 3 "~" H 6700 2150 50  0001 C CNN
+	1    6700 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_ALT D23
+U 1 1 5B9C29D9
+P 6400 2150
+F 0 "D23" H 6200 2000 50  0000 C CNN
+F 1 "GREEN" H 6450 2000 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6400 2150 50  0001 C CNN
+F 3 "~" H 6400 2150 50  0001 C CNN
+	1    6400 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_ALT D25
+U 1 1 5B9C29FF
+P 7000 2150
+F 0 "D25" H 6800 2000 50  0000 C CNN
+F 1 "GREEN" H 7050 2000 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7000 2150 50  0001 C CNN
+F 3 "~" H 7000 2150 50  0001 C CNN
+	1    7000 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 4150 6200 4150
+Wire Wire Line
+	6200 4150 6200 4250
+Wire Wire Line
+	6200 4250 6050 4250
+Wire Wire Line
+	6050 4350 6200 4350
+Wire Wire Line
+	6200 4350 6200 4250
+Connection ~ 6200 4250
+$Comp
+L bldc-BMS-rescue:GND #PWR?
+U 1 1 5B9CA7F3
+P 6200 4500
+AR Path="/5B1D586D/5B9CA7F3" Ref="#PWR?"  Part="1" 
+AR Path="/5B9C25BE/5B9CA7F3" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 6200 4250 50  0001 C CNN
+F 1 "GND" H 6200 4350 50  0000 C CNN
+F 2 "" H 6200 4500 50  0001 C CNN
+F 3 "" H 6200 4500 50  0001 C CNN
+	1    6200 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4350 6200 4500
+Connection ~ 6200 4350
+$Comp
+L bldc-BMS-rescue:GND #PWR?
+U 1 1 5B9CB116
+P 4000 4500
+AR Path="/5B1D586D/5B9CB116" Ref="#PWR?"  Part="1" 
+AR Path="/5B9C25BE/5B9CB116" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 4000 4250 50  0001 C CNN
+F 1 "GND" H 4000 4350 50  0000 C CNN
+F 2 "" H 4000 4500 50  0001 C CNN
+F 3 "" H 4000 4500 50  0001 C CNN
+	1    4000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4250 4200 4250
+Wire Wire Line
+	4000 4250 4000 4500
+$Comp
+L bldc-BMS-rescue:C_Small C?
+U 1 1 5B9E71F1
+P 1900 2850
+AR Path="/5B1DA841/5B9E71F1" Ref="C?"  Part="1" 
+AR Path="/5B9C25BE/5B9E71F1" Ref="C28"  Part="1" 
+F 0 "C28" H 1910 2920 50  0000 L CNN
+F 1 "0.1uF" H 1910 2770 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1900 2850 50  0001 C CNN
+F 3 "" H 1900 2850 50  0001 C CNN
+	1    1900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3050 1900 2950
+Wire Wire Line
+	1900 2350 1900 2750
+Connection ~ 1900 2350
+$Comp
+L bldc-BMS-rescue:GND #PWR?
+U 1 1 5B9E7E7A
+P 1900 3050
+AR Path="/5B1D586D/5B9E7E7A" Ref="#PWR?"  Part="1" 
+AR Path="/5B9C25BE/5B9E7E7A" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 1900 2800 50  0001 C CNN
+F 1 "GND" H 1900 2900 50  0000 C CNN
+F 2 "" H 1900 3050 50  0001 C CNN
+F 3 "" H 1900 3050 50  0001 C CNN
+	1    1900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5B9E80A4
+P 4000 2450
+AR Path="/5B1DA841/5B9E80A4" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5B9E80A4" Ref="R63"  Part="1" 
+F 0 "R63" V 4100 2300 50  0000 L CNN
+F 1 "100k" V 4100 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4000 2450 50  0001 C CNN
+F 3 "" H 4000 2450 50  0001 C CNN
+	1    4000 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 2450 4250 2450
+Wire Wire Line
+	3900 2450 3750 2450
+Wire Wire Line
+	3750 2450 3750 2350
+Wire Wire Line
+	3750 2350 4250 2350
+Wire Wire Line
+	4250 4350 4200 4350
+Wire Wire Line
+	4200 4350 4200 4250
+Connection ~ 4200 4250
+Wire Wire Line
+	4200 4250 4000 4250
+Text HLabel 1700 900  0    60   Input ~ 0
+C10
+$Comp
+L bldc-BMS-rescue:Q_PMOS_DGS Q?
+U 1 1 5B9EDAAA
+P 2800 1450
+AR Path="/5B1D586D/5B9EDAAA" Ref="Q?"  Part="1" 
+AR Path="/5B9C25BE/5B9EDAAA" Ref="Q17"  Part="1" 
+F 0 "Q17" H 3000 1500 50  0000 L CNN
+F 1 "ZXMP10A13FTA" H 3000 1400 50  0000 L CNN
+F 2 "" H 3000 1550 50  0001 C CNN
+F 3 "" H 2800 1450 50  0001 C CNN
+	1    2800 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L bldc-BMS-rescue:Q_NMOS_DGS Q?
+U 1 1 5B9F1ACB
+P 3500 2950
+AR Path="/5B1DA841/5B9F1ACB" Ref="Q?"  Part="1" 
+AR Path="/5B9C25BE/5B9F1ACB" Ref="Q18"  Part="1" 
+F 0 "Q18" H 3700 3000 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 3700 2900 50  0000 L CNN
+F 2 "" H 3700 3050 50  0001 C CNN
+F 3 "" H 3500 2950 50  0001 C CNN
+	1    3500 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5B9F5940
+P 3400 1150
+AR Path="/5B1DA841/5B9F5940" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5B9F5940" Ref="R60"  Part="1" 
+F 0 "R60" V 3300 1100 50  0000 L CNN
+F 1 "100k" V 3500 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3400 1150 50  0001 C CNN
+F 3 "" H 3400 1150 50  0001 C CNN
+	1    3400 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1050 3400 900 
+Wire Wire Line
+	3400 900  2700 900 
+Wire Wire Line
+	2700 1250 2700 900 
+Connection ~ 2700 900 
+Wire Wire Line
+	2700 900  1700 900 
+Wire Wire Line
+	3400 1250 3400 1450
+Wire Wire Line
+	3400 1450 3000 1450
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5B9F893A
+P 2700 1850
+AR Path="/5B1DA841/5B9F893A" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5B9F893A" Ref="R58"  Part="1" 
+F 0 "R58" V 2600 1800 50  0000 L CNN
+F 1 "300k" H 2850 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 1850 50  0001 C CNN
+F 3 "" H 2700 1850 50  0001 C CNN
+	1    2700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1650 2700 1750
+Wire Wire Line
+	3400 1450 3400 1700
+Connection ~ 3400 1450
+Wire Wire Line
+	1900 2350 3750 2350
+Connection ~ 3750 2350
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BA04433
+P 2700 4450
+AR Path="/5B1DA841/5BA04433" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BA04433" Ref="R59"  Part="1" 
+F 0 "R59" V 2600 4400 50  0000 L CNN
+F 1 "300k" H 2850 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 4450 50  0001 C CNN
+F 3 "" H 2700 4450 50  0001 C CNN
+	1    2700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc-BMS-rescue:C_Small C?
+U 1 1 5BA044C5
+P 3100 4450
+AR Path="/5B1DA841/5BA044C5" Ref="C?"  Part="1" 
+AR Path="/5B9C25BE/5BA044C5" Ref="C29"  Part="1" 
+F 0 "C29" H 3110 4520 50  0000 L CNN
+F 1 "3.3uF" H 3110 4370 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3100 4450 50  0001 C CNN
+F 3 "" H 3100 4450 50  0001 C CNN
+	1    3100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc-BMS-rescue:GND #PWR?
+U 1 1 5BA04552
+P 2700 4700
+AR Path="/5B1D586D/5BA04552" Ref="#PWR?"  Part="1" 
+AR Path="/5B9C25BE/5BA04552" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 2700 4450 50  0001 C CNN
+F 1 "GND" H 2700 4550 50  0000 C CNN
+F 2 "" H 2700 4700 50  0001 C CNN
+F 3 "" H 2700 4700 50  0001 C CNN
+	1    2700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4550 2700 4650
+Wire Wire Line
+	3100 4550 3100 4650
+Wire Wire Line
+	3100 4650 2700 4650
+Connection ~ 2700 4650
+Wire Wire Line
+	2700 4650 2700 4700
+Wire Wire Line
+	3100 4250 2700 4250
+Wire Wire Line
+	2700 4250 2700 4350
+Wire Wire Line
+	3100 4250 3100 4350
+Wire Wire Line
+	2700 4250 2700 2650
+Connection ~ 2700 4250
+$Comp
+L bldc-BMS-rescue:GND #PWR?
+U 1 1 5BA0AFFB
+P 3400 3300
+AR Path="/5B1D586D/5BA0AFFB" Ref="#PWR?"  Part="1" 
+AR Path="/5B9C25BE/5BA0AFFB" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 3400 3050 50  0001 C CNN
+F 1 "GND" H 3400 3150 50  0000 C CNN
+F 2 "" H 3400 3300 50  0001 C CNN
+F 3 "" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3300 3400 3150
+Wire Wire Line
+	6400 2300 6400 2350
+Wire Wire Line
+	6400 2350 6050 2350
+Wire Wire Line
+	6050 2450 6700 2450
+Wire Wire Line
+	6700 2450 6700 2300
+Wire Wire Line
+	6050 2550 7000 2550
+Wire Wire Line
+	7000 2550 7000 2300
+Wire Wire Line
+	7300 2300 7300 2650
+Wire Wire Line
+	7300 2650 6050 2650
+Wire Wire Line
+	6050 2750 7600 2750
+Wire Wire Line
+	7600 2750 7600 2300
+Wire Wire Line
+	4250 2950 4000 2950
+Connection ~ 4000 4250
+Wire Wire Line
+	4250 3950 4000 3950
+Connection ~ 4000 3950
+Wire Wire Line
+	4000 3950 4000 4250
+$Comp
+L bldc-BMS-rescue:C_Small C?
+U 1 1 5BA362F1
+P 6600 4300
+AR Path="/5B1DA841/5BA362F1" Ref="C?"  Part="1" 
+AR Path="/5B9C25BE/5BA362F1" Ref="C31"  Part="1" 
+F 0 "C31" H 6610 4370 50  0000 L CNN
+F 1 "0.1uF" H 6610 4220 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6600 4300 50  0001 C CNN
+F 3 "" H 6600 4300 50  0001 C CNN
+	1    6600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3850 6600 3850
+Wire Wire Line
+	6600 3850 6600 4200
+$Comp
+L bldc-BMS-rescue:GND #PWR?
+U 1 1 5BA37811
+P 6600 4500
+AR Path="/5B1D586D/5BA37811" Ref="#PWR?"  Part="1" 
+AR Path="/5B9C25BE/5BA37811" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 6600 4250 50  0001 C CNN
+F 1 "GND" H 6600 4350 50  0000 C CNN
+F 2 "" H 6600 4500 50  0001 C CNN
+F 3 "" H 6600 4500 50  0001 C CNN
+	1    6600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4500 6600 4400
+Text HLabel 3250 3850 0    60   Input ~ 0
+~ENABLE
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BA5A296
+P 3750 3850
+AR Path="/5B1DA841/5BA5A296" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BA5A296" Ref="R62"  Part="1" 
+F 0 "R62" V 3850 3850 50  0000 L CNN
+F 1 "1k" V 3650 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 3850 50  0001 C CNN
+F 3 "" H 3750 3850 50  0001 C CNN
+	1    3750 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 3850 3400 3850
+Wire Wire Line
+	4000 2950 4000 3950
+Wire Wire Line
+	3850 3850 4250 3850
+Wire Wire Line
+	4250 2850 4150 2850
+Wire Wire Line
+	3800 2850 3800 2950
+Wire Wire Line
+	3800 2950 3700 2950
+Wire Wire Line
+	4250 2650 2700 2650
+Connection ~ 2700 2650
+Wire Wire Line
+	2700 2650 2700 1950
+Text HLabel 9300 3250 2    60   Input ~ 0
+SMBD
+Text HLabel 9300 3350 2    60   Input ~ 0
+SMBC
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BA750C6
+P 8150 2750
+AR Path="/5B1DA841/5BA750C6" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BA750C6" Ref="R70"  Part="1" 
+F 0 "R70" V 8250 2600 50  0000 L CNN
+F 1 "510k" V 8250 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8150 2750 50  0001 C CNN
+F 3 "" H 8150 2750 50  0001 C CNN
+	1    8150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BA7512A
+P 7900 2750
+AR Path="/5B1DA841/5BA7512A" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BA7512A" Ref="R69"  Part="1" 
+F 0 "R69" V 8000 2600 50  0000 L CNN
+F 1 "510k" V 8000 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 2750 50  0001 C CNN
+F 3 "" H 7900 2750 50  0001 C CNN
+	1    7900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2850 7900 3250
+Wire Wire Line
+	8150 2850 8150 3350
+Wire Wire Line
+	6050 3650 6200 3650
+Wire Wire Line
+	6200 3650 6200 4150
+Connection ~ 6200 4150
+Text HLabel 6250 3050 2    60   Input ~ 0
+CP_EN
+Wire Wire Line
+	6050 3050 6250 3050
+$Comp
+L bldc-BMS-rescue:SW_Push SW?
+U 1 1 5BA85245
+P 8400 3800
+AR Path="/5B1DA841/5BA85245" Ref="SW?"  Part="1" 
+AR Path="/5B9C25BE/5BA85245" Ref="SW2"  Part="1" 
+F 0 "SW2" H 8450 3900 50  0000 L CNN
+F 1 "SW_Push" H 8400 3740 50  0000 C CNN
+F 2 "" H 8400 4000 50  0001 C CNN
+F 3 "" H 8400 4000 50  0001 C CNN
+	1    8400 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L bldc-BMS-rescue:GND #PWR?
+U 1 1 5BA8B312
+P 8400 4100
+AR Path="/5B1D586D/5BA8B312" Ref="#PWR?"  Part="1" 
+AR Path="/5B9C25BE/5BA8B312" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 8400 3850 50  0001 C CNN
+F 1 "GND" H 8400 3950 50  0000 C CNN
+F 2 "" H 8400 4100 50  0001 C CNN
+F 3 "" H 8400 4100 50  0001 C CNN
+	1    8400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4100 8400 4000
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BA8F570
+P 8400 2750
+AR Path="/5B1DA841/5BA8F570" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BA8F570" Ref="R71"  Part="1" 
+F 0 "R71" V 8500 2600 50  0000 L CNN
+F 1 "100k" V 8500 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 2750 50  0001 C CNN
+F 3 "" H 8400 2750 50  0001 C CNN
+	1    8400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3250 7900 3250
+Wire Wire Line
+	6050 3350 8150 3350
+Wire Wire Line
+	7900 2650 7900 2450
+Wire Wire Line
+	7900 2450 8150 2450
+Wire Wire Line
+	8150 2450 8150 2650
+Wire Wire Line
+	8150 2450 8400 2450
+Wire Wire Line
+	8400 2450 8400 2650
+Connection ~ 8150 2450
+Wire Wire Line
+	8400 2850 8400 2950
+Wire Wire Line
+	9300 3250 7900 3250
+Connection ~ 7900 3250
+Wire Wire Line
+	8150 3350 9300 3350
+Connection ~ 8150 3350
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BAE9106
+P 3400 1800
+AR Path="/5B1DA841/5BAE9106" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BAE9106" Ref="R61"  Part="1" 
+F 0 "R61" V 3300 1750 50  0000 L CNN
+F 1 "220k" V 3500 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3400 1800 50  0001 C CNN
+F 3 "" H 3400 1800 50  0001 C CNN
+	1    3400 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1900 3400 2750
+Text HLabel 4050 2750 0    60   Input ~ 0
+PMON_EN
+Wire Wire Line
+	4050 2750 4150 2750
+Wire Wire Line
+	4150 2750 4150 2850
+Connection ~ 4150 2850
+Wire Wire Line
+	4150 2850 3800 2850
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BAF7848
+P 6400 1800
+AR Path="/5B1DA841/5BAF7848" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BAF7848" Ref="R64"  Part="1" 
+F 0 "R64" V 6300 1750 50  0000 L CNN
+F 1 "2k" V 6500 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 1800 50  0001 C CNN
+F 3 "" H 6400 1800 50  0001 C CNN
+	1    6400 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1700 6400 1600
+Wire Wire Line
+	6400 1600 6700 1600
+Wire Wire Line
+	6050 2950 8400 2950
+Connection ~ 8400 2950
+Wire Wire Line
+	8400 2950 8400 3600
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BB202C8
+P 6700 1800
+AR Path="/5B1DA841/5BB202C8" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BB202C8" Ref="R65"  Part="1" 
+F 0 "R65" V 6600 1750 50  0000 L CNN
+F 1 "2k" V 6800 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6700 1800 50  0001 C CNN
+F 3 "" H 6700 1800 50  0001 C CNN
+	1    6700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BB20312
+P 7000 1800
+AR Path="/5B1DA841/5BB20312" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BB20312" Ref="R66"  Part="1" 
+F 0 "R66" V 6900 1750 50  0000 L CNN
+F 1 "2k" V 7100 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 1800 50  0001 C CNN
+F 3 "" H 7000 1800 50  0001 C CNN
+	1    7000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BB2035A
+P 7300 1800
+AR Path="/5B1DA841/5BB2035A" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BB2035A" Ref="R67"  Part="1" 
+F 0 "R67" V 7200 1750 50  0000 L CNN
+F 1 "2k" V 7400 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7300 1800 50  0001 C CNN
+F 3 "" H 7300 1800 50  0001 C CNN
+	1    7300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc-BMS-rescue:R_Small R?
+U 1 1 5BB203A4
+P 7600 1800
+AR Path="/5B1DA841/5BB203A4" Ref="R?"  Part="1" 
+AR Path="/5B9C25BE/5BB203A4" Ref="R68"  Part="1" 
+F 0 "R68" V 7500 1750 50  0000 L CNN
+F 1 "2k" V 7700 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7600 1800 50  0001 C CNN
+F 3 "" H 7600 1800 50  0001 C CNN
+	1    7600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1900 6400 2000
+Wire Wire Line
+	6700 1900 6700 2000
+Wire Wire Line
+	7000 1900 7000 2000
+Wire Wire Line
+	7300 1900 7300 2000
+Wire Wire Line
+	7600 1900 7600 2000
+Wire Wire Line
+	7600 1700 7600 1600
+Wire Wire Line
+	7300 1700 7300 1600
+Connection ~ 7300 1600
+Wire Wire Line
+	7300 1600 7600 1600
+Wire Wire Line
+	7000 1700 7000 1600
+Connection ~ 7000 1600
+Wire Wire Line
+	7000 1600 7300 1600
+Wire Wire Line
+	6700 1700 6700 1600
+Connection ~ 6700 1600
+Wire Wire Line
+	6700 1600 7000 1600
+Connection ~ 6400 1600
+Wire Wire Line
+	1900 2350 1900 2150
+Text Label 1550 2150 0    60   ~ 0
+REGOUT
+Wire Wire Line
+	1550 2150 1900 2150
+Text Label 8500 2350 2    60   ~ 0
+REGOUT
+Wire Wire Line
+	3400 900  6400 900 
+Wire Wire Line
+	6400 900  6400 1600
+Text Notes 6700 1350 0    60   ~ 0
+Need 10mA from 20V:\nV=IR; R=V/I = 20V/10mA = 2k
+Wire Wire Line
+	8150 2450 8150 2350
+Wire Wire Line
+	8150 2350 8500 2350
+Text Notes 6650 3100 0    60   ~ 0
+POWER MODE PIN
+Connection ~ 3400 900 
+Text Notes 4300 5250 0    60   ~ 0
+~PRES\n- If high for 4x 250ms samples, CHG, DSG AND PCHG FETs are disabled.\n- If low, system can enable. 
+Text HLabel 3850 3350 0    60   Input ~ 0
+ALERT
+Wire Wire Line
+	3850 3350 4250 3350
+$Comp
+L bldc-BMS-rescue:C_Small C?
+U 1 1 5C8E2D9C
+P 3400 4050
+AR Path="/5B1DA841/5C8E2D9C" Ref="C?"  Part="1" 
+AR Path="/5B9C25BE/5C8E2D9C" Ref="C30"  Part="1" 
+F 0 "C30" H 3410 4120 50  0000 L CNN
+F 1 "0.1uF" H 3410 3970 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3400 4050 50  0001 C CNN
+F 3 "" H 3400 4050 50  0001 C CNN
+	1    3400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3950 3400 3850
+Connection ~ 3400 3850
+Wire Wire Line
+	3400 3850 3250 3850
+$Comp
+L bldc-BMS-rescue:GND #PWR?
+U 1 1 5C8E5B37
+P 3400 4200
+AR Path="/5B1D586D/5C8E5B37" Ref="#PWR?"  Part="1" 
+AR Path="/5B9C25BE/5C8E5B37" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 3400 3950 50  0001 C CNN
+F 1 "GND" H 3400 4050 50  0000 C CNN
+F 2 "" H 3400 4200 50  0001 C CNN
+F 3 "" H 3400 4200 50  0001 C CNN
+	1    3400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4200 3400 4150
+$EndSCHEMATC
