@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bldc-BMS-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -410,7 +410,7 @@ Wire Wire Line
 Connection ~ 1650 2750
 Wire Wire Line
 	1650 2750 1850 2750
-Text Notes 7650 6350 0    60   ~ 0
+Text Notes 8900 5550 0    60   ~ 0
 AMASS XT60PW?\nhttps://www.tme.eu/gb/details/xt60pw-f/dc-power-connectors/amass/
 Text Notes 9300 850  0    60   ~ 0
 SWD PROGRAMMING

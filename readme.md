@@ -51,7 +51,7 @@ The MCU provides a communiciton bridge between the gas gauge and PC (serial via 
 Firware updates done via SWD or Device firmware update via [USB DFU](http://www.st.com/content/ccc/resource/technical/document/application_note/6a/17/92/02/58/98/45/0c/CD00264379.pdf/files/CD00264379.pdf/jcr:content/translations/en.CD00264379.pdf).
 
 STM32F072C8T6TR
-CAN, HDMI-CEC, I²C, IrDA, LIN, SPI, UART/USART, USB
+CAN, HDMI-CEC, I²C (SMBus), IrDA, LIN, SPI, UART/USART, USB
 IC MCU 32BIT 64KB FLASH 48LQFP
 ARM® Cortex®-M0 STM32F0 Microcontroller IC 32-Bit 48MHz 64KB (64K x 8) FLASH 48-LQFP (7x7)
 
@@ -66,20 +66,24 @@ ARM® Cortex®-M0 STM32F0 Microcontroller IC 32-Bit 48MHz 64KB (64K x 8) FLASH 4
 ## TODO
 - [x] Determine pack size and output - see intro
 - [x] Determine cell monitor - bq76930
-- [ ] Determine gas gauge - bq78350-R1 or bq34z100-R1
+- [x] Determine gas gauge - bq78350-R1 or bq34z100-R1
 - [x] Determine MCU - STM32F072 (USB-to-serial, USB bootloader, I2C, CAN)
-- [ ] 30% - Schematic capture
-   - [ ] Add pre-charge circuit
-   - [ ] Change balancing circuit from PNP to NPN
-   - [ ] Change power-stange layout to POS rail on top of sheet
-   - [ ] Setup for 6s? or have populated bypass for this layout
-   - [ ] Press button to show SoC LED display with gas-gauge?
-   - [ ] Jumper for MCU to be powered by pack
-- [ ] 10% - BoM and footprint selection for PCB
-- [ ] 0% - Determine PCB footprint size constraights (multiple of 26650 cell size)
-- [ ] 0% - PCB capture
+- [x] 100% - Schematic capture
+   - [x] Add pre-charge circuit
+   - [x] Change balancing circuit from PNP to NPN
+   - [x] Change power-stange layout to POS rail on top of sheet
+   - [x] Setup for 6s? or have populated bypass for this layout
+   - [x] Press button to show SoC LED display with gas-gauge?
+   - [x] Jumper for MCU to be powered by pack
+- [x] 100% - BoM and footprint selection for PCB
+- [x] 1000% - Determine PCB footprint size constraights (multiple of 26650 cell size)
+- [x] 100% - PCB capture
 - [ ] 0% - write driver for gas gauge on MCU
 - [ ] 0% - write interface module for MCU to PC
-- [ ] 0% - Order PCB and components
-- [ ] 0% - Assemble components on PCB
-- [ ] 0% - Hardware validation testing
+- [x] 100% - Order PCB and components
+- [x] 100% - Assemble components on PCB
+- [x] 100% - Hardware validation testing
+
+## PCB_2019-06 TOFIX
+- [ ] Swap I2C's on STM32F0 as I2C1 only support SMBus for bq78350-r1
+- [ ] Mirror STM32F0 debug conn pinout

@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:bldc-BMS-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1000,4 +1000,6 @@ F 3 "" H 7150 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8250 2250
+Text Notes 6500 4700 0    60   ~ 12
+I2C FIXME:\n- Switch I2C1 and I2C2. \n- Battery Controller (I2C2 is SMBus which STM32F0 has native support on I2C1 port,  not I2C2)\n- Rename I2C2 with SMBus?
 $EndSCHEMATC
