@@ -87,3 +87,4 @@ ARM® Cortex®-M0 STM32F0 Microcontroller IC 32-Bit 48MHz 64KB (64K x 8) FLASH 4
 ## PCB_2019-06 TOFIX
 - [ ] Swap I2C's on STM32F0 as I2C1 only support SMBus for bq78350-r1
 - [ ] Mirror STM32F0 debug conn pinout
+- [ ] Assemble and test PCB
