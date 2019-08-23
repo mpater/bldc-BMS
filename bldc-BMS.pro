@@ -1,4 +1,4 @@
-update=Sat 03 Aug 2019 12:23:42 BST
+update=Fri 23 Aug 2019 11:46:27 BST
 version=1
 last_client=kicad
 [cvpcb]
@@ -257,7 +257,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=bldc-BMS.pdf
+PlotDirectoryName=bldc-BMS
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
